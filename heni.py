@@ -9,11 +9,58 @@ list_arrw = np.array([[0, 0, 0, 1]])
 result = np.array([])
 
 print("xについて計算します¥n")
-print("1")
-result = np.dot(list_arrx, list_arr)
+print("初期値")
+result = list_arrx
 print(result)
 
-for i in range(9):
+
+for i in range(10):
     result = np.dot(result, list_arr)
-    print(i)
+    print("w" + str(i+1) )
     print(result)
+
+
+print("")
+
+print("yについて計算します¥n")
+print("初期値")
+result = list_arry
+print(result)
+
+
+for i in range(10):
+    result = np.dot(result, list_arr)
+    print("w" + str(i+1) )
+    print(result)
+
+
+print("")
+
+
+print("zについて計算します¥n")
+print("初期値")
+result = list_arrz
+print(result)
+
+
+for i in range(10):
+    result = np.dot(result, list_arr)
+    print("w" + str(i+1) )
+    print(result)
+
+
+print("")
+
+print("wについて計算します¥n")
+print("初期値")
+result = list_arrw
+print(result)
+
+
+for i in range(10):
+    result = np.dot(result, list_arr)
+    print("w" + str(i+1) )
+    print(result)
+
+
+print("")
