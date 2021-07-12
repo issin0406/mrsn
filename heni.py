@@ -1,10 +1,12 @@
 import numpy as np
 
-list_arr = np.array([[0.2, 0.2, 0.3, 0.3], [0.2, 0.4, 0.1, 0.3], [0.2, 0.3, 0.1, 0.4], [0.1, 0.1, 0 , 0.8]])
-list_arrx = np.array([[1, 0, 0, 0]])
-list_arry = np.array([[0, 1, 0, 0]])
-list_arrz = np.array([[0, 0, 1, 0]])
-list_arrw = np.array([[0, 0, 0, 1]])
+list_arr = np.array([[0.2, 0.2, 0.3, 0.3], [0.2, 0.4, 0.1, 0.3], [0.2, 0.3, 0.1, 0.4], [0.1, 0.1, 0 , 0.8]],
+dtype='float64')
+list_arrx = np.array([[1, 0, 0, 0]],dtype='float64')
+list_arry = np.array([[0, 1, 0, 0]],dtype='float64')
+list_arrz = np.array([[0, 0, 1, 0]],dtype='float64')
+list_arrw = np.array([[0, 0, 0, 1]],dtype='float64')
+
 
 result = np.array([])
 
@@ -63,4 +65,17 @@ for i in range(10):
     print(result)
 
 
-print("")
+##print("")
+
+##print("定常確率")
+
+##list = np.dot(list_arrw, list_arr)
+
+##while True:
+##    afterlist = np.dot(list_arrw, list)
+##    if list == afterlist:
+##        break
+##    else:
+##        list = afterlist
+
+##print(list)
