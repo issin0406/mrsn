@@ -1,6 +1,8 @@
 import numpy as np
 
-list_arr = np.array([[0.2, 0.2, 0.3, 0.3], [0.2, 0.4, 0.1, 0.3], [0.2, 0.3, 0.1, 0.4], [0.1, 0.1, 0 , 0.8]],
+np.set_printoptions(precision=12)
+
+list_arr = np.array([[0.1, 0.5, 0.1, 0.3], [0.2, 0.4, 0.2, 0.2], [0, 0.3, 0.2, 0.5], [0.4, 0.1, 0.3 , 0.2]],
 dtype='float64')
 list_arrx = np.array([[1, 0, 0, 0]],dtype='float64')
 list_arry = np.array([[0, 1, 0, 0]],dtype='float64')
@@ -63,19 +65,3 @@ for i in range(10):
     result = np.dot(result, list_arr)
     print("w" + str(i+1) )
     print(result)
-
-
-##print("")
-
-##print("定常確率")
-
-##list = np.dot(list_arrw, list_arr)
-
-##while True:
-##    afterlist = np.dot(list_arrw, list)
-##    if list == afterlist:
-##        break
-##    else:
-##        list = afterlist
-
-##print(list)
